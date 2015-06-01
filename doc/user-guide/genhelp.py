@@ -225,7 +225,8 @@ def main():
         print("Usage: python genhelp.py input.xml output.txt")
         return
 
-    os.chdir(os.path.dirname(sys.argv[1]))
+    # ensure that we really are in the same directory as the input file
+    os.chdir(os.path.dirname(os.path.abspath(sys.argv[1])))
 
     txt = process_file(sys.argv[1])
     open(sys.argv[2], "w").write(txt)
