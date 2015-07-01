@@ -10,9 +10,9 @@
 # Include the bitlbee-libpurple variant and OTR plugin by default.
 # Don't build skype by default since it depends on deleted/non-free
 # packages. Need to at least get python-skype back into Debian.
-BITLBEE_LIBPURPLE ?= 1
-BITLBEE_OTR ?= plugin
-BITLBEE_SKYPE ?= 0
+BITLBEE_LIBPURPLE ?= 0
+BITLBEE_OTR ?= 0
+BITLBEE_SKYPE ?= plugin
 BITLBEE_CONFIGURE_FLAGS ?=
 DEBUG ?= 0
 
